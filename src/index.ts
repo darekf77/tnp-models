@@ -1,4 +1,1 @@
-console.log('hello models')
-export class Models {
-
-}
+export * from './models';
