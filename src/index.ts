@@ -1,1 +1,5 @@
-export * from './models';
+
+
+export class Models {
+
+}
