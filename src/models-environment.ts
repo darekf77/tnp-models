@@ -32,6 +32,8 @@ export namespace ModelsEnvinronment {
   export interface EnvConfig {
 
     pathes?: any;
+    config?:any;
+    configsFromJs?:any;
     isCoreProject?: boolean; // generated
     isSiteProject?: boolean; // generated
     isStandaloneProject?: boolean; // generated
