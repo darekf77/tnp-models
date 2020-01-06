@@ -159,6 +159,7 @@ export namespace ModelsNpm {
        * Override automation generation
        */
       overrided: {
+        tsconfig?: Object;
         dedupe?: string[];
         ignoreDepsPattern?: string[];
         includeOnly?: string[];
