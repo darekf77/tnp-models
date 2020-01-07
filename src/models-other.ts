@@ -90,6 +90,7 @@ export namespace ModelsOther {
 
 
   export interface IProject {
+    StaticVersion();
     isSite: boolean;
     isCoreProject: boolean;
     isCommandLineToolOnly: boolean;

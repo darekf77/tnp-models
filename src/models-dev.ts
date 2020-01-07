@@ -3,6 +3,8 @@ import { ModelsOther } from './models-other';
 
 export namespace ModelsDev {
 
+  export type ProjectBuild = { project: ModelsOther.IProject; appBuild: boolean; };
+
   export type InitArgOptions = {
     skipNodeModules: boolean;
     recrusive: boolean;
