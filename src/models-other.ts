@@ -118,6 +118,7 @@ export namespace ModelsOther {
     env: ModelsEnvinronment.EnvConfig;
     allowedEnvironments: ModelsEnvinronment.EnvironmentName[];
     children: IProject[];
+    grandpa: IProject;
     distribution: IProject;
     childrenThatAreLibs?: IProject[];
     childrenThatAreClients?: IProject[];
