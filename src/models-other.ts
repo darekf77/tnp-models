@@ -100,6 +100,7 @@ export namespace ModelsOther {
     isForRecreation: boolean;
     isWorkspace: boolean;
     isContainer: boolean;
+    isContainerWithLinkedProjects: boolean;
     isContainerChild: boolean;
     isStandaloneProject: boolean;
     isUnknowNpmProject: boolean;
