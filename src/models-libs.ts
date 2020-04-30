@@ -1,4 +1,6 @@
 export namespace ModelsLibTypes {
+
+  export type FrameworkVersion = 'v1' | 'v2' | 'v3';
   export type LibType = 'unknow'
     | 'angular-lib'
     // | 'angular-lib-v2'
