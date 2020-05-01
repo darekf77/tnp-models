@@ -57,8 +57,10 @@ export namespace ModelsEnvinronment {
       },
       projects: EnvConfigProject[]
     }
+    clientProjectName?: string;
     currentLibProjectSourceFolder?: 'src' | 'components';
     currentProjectName?: string;
+    currentProjectLaunchConfiguration?: string;
     currentProjectPort?: number;
     currentProjectLocation?: string;
     currentProjectIsSite?: boolean;
