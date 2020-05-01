@@ -59,6 +59,7 @@ export namespace ModelsEnvinronment {
     }
     currentLibProjectSourceFolder?: 'src' | 'components';
     currentProjectName?: string;
+    currentProjectPort?: number;
     currentProjectLocation?: string;
     currentProjectIsSite?: boolean;
     currentProjectIsStatic?: boolean;
