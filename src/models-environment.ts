@@ -61,6 +61,7 @@ export namespace ModelsEnvinronment {
     currentLibProjectSourceFolder?: 'src' | 'components';
     currentProjectName?: string;
     currentProjectLaunchConfiguration?: string;
+    currentProjectTasksConfiguration?: string;
     currentProjectPort?: number;
     currentProjectLocation?: string;
     currentProjectIsSite?: boolean;
