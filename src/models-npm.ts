@@ -156,6 +156,13 @@ export namespace ModelsNpm {
        */
       required?: string[],
       /**
+       * Usable only in workspace children
+       * Required workspace servers children for particular workspcae child
+       * if server don't need lib that is required for
+       * can be put into required[];
+       */
+      requiredServers?: string[],
+      /**
        * Override automation generation
        */
       overrided: {
