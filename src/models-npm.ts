@@ -134,8 +134,6 @@ export namespace ModelsNpm {
        * Relative path to baseline.
        */
       basedOn: string,
-      basedOnAbsolutePath1: string, // QUICK_FIX
-      basedOnAbsolutePath2: string, // QUICK_FIX
       /**
        * Static resurces for standalone project, that are
        * going to be included in bundle
