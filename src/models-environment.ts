@@ -8,7 +8,7 @@ import { ModelsDev } from './models-dev';
 
 export namespace ModelsEnvinronment {
 
-  export type EnvironmentName = 'local' | 'static' | 'dev' | 'stage' | 'prod' | 'online' | 'test';
+  export type EnvironmentName = 'local' | 'static' | 'dev' | 'stage' | 'prod' | 'online' | 'test' | 'qa' | 'custom';
 
 
 
@@ -32,8 +32,8 @@ export namespace ModelsEnvinronment {
   export interface EnvConfig {
 
     pathes?: any;
-    config?:any;
-    configsFromJs?:any;
+    config?: any;
+    configsFromJs?: any;
     isCoreProject?: boolean; // generated
     isStandaloneProject?: boolean; // generated
     name?: EnvironmentName; // generated
@@ -68,8 +68,8 @@ export namespace ModelsEnvinronment {
     currentProjectIsDependencySite?: boolean;
     currentProjectIsStatic?: boolean;
     currentProjectComponentsFolder?: string;
-    currentProjectTsConfigPathes?:string;
-    currentProjectTsConfigPathesForBrowser?:string;
+    currentProjectTsConfigPathes?: string;
+    currentProjectTsConfigPathesForBrowser?: string;
     currentProjectType?: ModelsLibTypes.LibType;
     packageJSON?: ModelsNpm.IPackageJSON;
 
