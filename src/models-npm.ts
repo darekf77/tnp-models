@@ -135,6 +135,10 @@ export namespace ModelsNpm {
        */
       basedOn: string,
       /**
+       * dependency site baselines
+       */
+      dependsOn: string[],
+      /**
        * Static resurces for standalone project, that are
        * going to be included in bundle
        */

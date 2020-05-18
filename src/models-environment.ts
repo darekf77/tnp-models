@@ -35,7 +35,6 @@ export namespace ModelsEnvinronment {
     config?:any;
     configsFromJs?:any;
     isCoreProject?: boolean; // generated
-    isSiteProject?: boolean; // generated
     isStandaloneProject?: boolean; // generated
     name?: EnvironmentName; // generated
     frameworks?: UIFramework[];
@@ -65,6 +64,8 @@ export namespace ModelsEnvinronment {
     currentProjectPort?: number;
     currentProjectLocation?: string;
     currentProjectIsSite?: boolean;
+    currentProjectIsStrictSite?: boolean;
+    currentProjectIsDependencySite?: boolean;
     currentProjectIsStatic?: boolean;
     currentProjectComponentsFolder?: string;
     currentProjectTsConfigPathes?:string;

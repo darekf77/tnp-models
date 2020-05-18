@@ -92,6 +92,8 @@ export namespace ModelsOther {
   export interface IProject {
     StaticVersion();
     isSite: boolean;
+    isSiteInStrictMode?: boolean;
+    isSiteInDependencyMode?: boolean;
     isCoreProject: boolean;
     isCommandLineToolOnly: boolean;
     isGenerated: boolean;
