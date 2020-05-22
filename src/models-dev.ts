@@ -92,6 +92,7 @@ export namespace ModelsDev {
     progressCallback?: (fractionValue: number) => any;
     prod?: boolean;
     watch?: boolean;
+    watchOnly?: boolean;
     outDir?: BuildDir;
     appBuild?: boolean;
     args?: string;
