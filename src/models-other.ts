@@ -90,7 +90,6 @@ export namespace ModelsOther {
 
 
   export interface IProject {
-    StaticVersion();
     isSite: boolean;
     isSiteInStrictMode?: boolean;
     isSiteInDependencyMode?: boolean;
@@ -118,7 +117,6 @@ export namespace ModelsOther {
     backupName: string;
     location: string;
     resources: string[];
-    env: ModelsEnvinronment.EnvConfig;
     allowedEnvironments: ModelsEnvinronment.EnvironmentName[];
     children: IProject[];
     grandpa: IProject;
@@ -129,6 +127,7 @@ export namespace ModelsOther {
     parent: IProject;
     preview: IProject;
     baseline: IProject;
+    browser?: IProject;
   }
 
 
