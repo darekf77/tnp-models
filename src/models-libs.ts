@@ -2,14 +2,13 @@ export namespace ModelsLibTypes {
 
   export type FrameworkVersion = 'v1' | 'v2' | 'v3';
   export type LibType = 'unknow'
-    | 'angular-lib'
-    // | 'angular-lib-v2'
     | 'isomorphic-lib'
-    // | 'isomorphic-lib-v2'
+    | 'angular-lib'
+    | 'electron-lib'
+    | 'ionic-lib'
     | 'angular-client'
     | 'ionic-client'
     | 'workspace'
-    // | 'workspace-v2'
     | 'container'
     | 'docker'
     | 'vscode-ext'
@@ -17,14 +16,13 @@ export namespace ModelsLibTypes {
     | 'unknow-npm-project';
 
   export const GlobalLibTypeName = {
-    angularLib: 'angular-lib',
-    // angularLibV2: 'angular-lib-v2',
     isomorphicLib: 'isomorphic-lib',
-    // isomorphicLibV2: 'isomorphic-lib-v2',
+    angularLib: 'angular-lib',
+    electronLib: 'electron-lib',
+    ionicLib: 'ionic-lib',
     angularClient: 'angular-client',
     ionicClient: 'ionic-client',
     workspace: 'workspace',
-    // workspaceV2: 'workspace-v2',
     container: 'container',
     docker: 'docker',
     unknowNpmProject: 'unknow-npm-project',
