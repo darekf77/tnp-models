@@ -3,8 +3,6 @@ import { ModelsOther } from './models-other';
 
 export namespace ModelsDev {
 
-  export type ProjectBuild = { project: ModelsOther.IProject; appBuild: boolean; };
-
   export type InitArgOptions = {
     skipNodeModules: boolean;
     recrusive: boolean;
@@ -98,19 +96,5 @@ export namespace ModelsDev {
     args?: string;
     staticBuildAllowed?: boolean;
   };
-
-
-  export interface IBuildOptions extends StartForOptions {
-    noConsoleClear?: boolean;
-    genOnlyClientCode?: boolean;
-    onlyBackend?: boolean;
-    baseHref?: string;
-    onlyWatchNoBuild?: boolean;
-    buildForAllClients?: boolean;
-    forClient?: ModelsOther.IProject[] | string[];
-    copyto?: ModelsOther.IProject[] | string[];
-    additionalIsomorphicLibs?: string[];
-  }
-
 
 }

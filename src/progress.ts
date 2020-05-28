@@ -1,10 +1,12 @@
 import * as _ from 'lodash';
 import { CLASS } from 'typescript-class-helpers';
 
+//#region @backend
 declare const global: any;
 if (!global['ENV']) {
   global['ENV'] = {};
 }
+//#endregion
 
 export interface IPROGRESS_DATA {
   /**
@@ -23,9 +25,11 @@ export type PROGRESS_DATA_TYPE = 'info' | 'error' | 'warning' | 'event';
 export class PROGRESS_DATA implements IPROGRESS_DATA {
 
   public static log(log: IPROGRESS_DATA) {
+    //#region @backend
     if (global.tnpShowProgress) {
       console.log(`[[[${JSON.stringify({ value: log.value, msg: log.msg, date: new Date() } as IPROGRESS_DATA)}]]]`)
     }
+    //#endregion
   }
 
 
@@ -79,5 +83,6 @@ export class PROGRESS_DATA implements IPROGRESS_DATA {
 
 
 }
-
+//#region @backend
 global['ENV']['PROGRESS_DATA'] = PROGRESS_DATA;
+//#endregion

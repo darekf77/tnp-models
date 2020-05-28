@@ -89,47 +89,4 @@ export namespace ModelsOther {
 
 
 
-  export interface IProject {
-    isSite: boolean;
-    isSiteInStrictMode?: boolean;
-    isSiteInDependencyMode?: boolean;
-    isCoreProject: boolean;
-    isCommandLineToolOnly: boolean;
-    isGenerated: boolean;
-    isWorkspaceChildProject: boolean;
-    isBasedOnOtherProject: boolean;
-    isForRecreation: boolean;
-    isWorkspace: boolean;
-    isContainer: boolean;
-    isContainerWithLinkedProjects: boolean;
-    isContainerChild: boolean;
-    isStandaloneProject: boolean;
-    isUnknowNpmProject: boolean;
-    isTnp: boolean;
-    useFramework: boolean;
-    name: string;
-    genericName: string;
-    defaultPort?: number;
-    version: string;
-    _routerTargetHttp?: string;
-    customizableFilesAndFolders: string[];
-    type: ModelsLibTypes.LibType;
-    backupName: string;
-    location: string;
-    resources: string[];
-    allowedEnvironments: ModelsEnvinronment.EnvironmentName[];
-    children: IProject[];
-    grandpa: IProject;
-    distribution: IProject;
-    childrenThatAreLibs?: IProject[];
-    childrenThatAreClients?: IProject[];
-    childrenThatAreThirdPartyInNodeModules?: IProject[];
-    parent: IProject;
-    preview: IProject;
-    baseline: IProject;
-    browser?: IProject;
-  }
-
-
-
 }
