@@ -8,6 +8,10 @@ export namespace ModelsOther {
 
   export class Range {
 
+    static clone(r: Range) {
+      return new Range(r.from, r.to);
+    }
+
     static from(from: number) {
       // const self = this;
       return {
