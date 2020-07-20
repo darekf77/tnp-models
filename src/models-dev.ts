@@ -35,6 +35,9 @@ export namespace ModelsDev {
 
   export interface ReleaseOptions {
     prod?: boolean;
+    useTempFolder?: boolean;
+    uglify?: boolean;
+    obscure?: boolean;
     args?: string;
     bumbVersionIn?: string[];
   }
@@ -90,6 +93,8 @@ export namespace ModelsDev {
     progressCallback?: (fractionValue: number) => any;
     prod?: boolean;
     watch?: boolean;
+    uglify?: boolean;
+    obscure?: boolean;
     watchOnly?: boolean;
     outDir?: BuildDir;
     appBuild?: boolean;
