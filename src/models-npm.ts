@@ -81,6 +81,11 @@ export namespace ModelsNpm {
        *     import {  from 'tnp-helper';
        */
       linkedProjects?: string[];
+      libReleaseOptions: {
+        obscure?: boolean;
+        ugly?: boolean;
+        nodts?: boolean;
+      },
       /**
        * framework available inside project/app
        */

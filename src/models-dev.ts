@@ -38,6 +38,7 @@ export namespace ModelsDev {
     useTempFolder?: boolean;
     uglify?: boolean;
     obscure?: boolean;
+    nodts?: boolean;
     args?: string;
     bumbVersionIn?: string[];
   }
@@ -93,6 +94,7 @@ export namespace ModelsDev {
     progressCallback?: (fractionValue: number) => any;
     prod?: boolean;
     watch?: boolean;
+    nodts?: boolean;
     uglify?: boolean;
     obscure?: boolean;
     watchOnly?: boolean;
