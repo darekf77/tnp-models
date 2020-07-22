@@ -157,6 +157,11 @@ export namespace ModelsNpm {
        * Generated projects are inside dist folder in workspace project
        */
       isGenerated?: boolean;
+
+      /**
+       * Standalone project generated for release
+       */
+      isGeneratedForRelease?:boolean;
       /**
        * Usable only in workspace children
        * Required workspace children for particular workspcae child
