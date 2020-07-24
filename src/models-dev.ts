@@ -44,7 +44,9 @@ export namespace ModelsDev {
   }
 
   export interface RunOptions {
-
+    showCommand?: boolean;
+    /** Extract string from line */
+    extractFromLine?: (string | Function)[];
     /**
      * Show process output
      */
