@@ -63,6 +63,7 @@ export namespace ModelsEnvinronment {
     currentProjectTasksConfiguration?: string;
     currentProjectPort?: number;
     currentProjectLocation?: string;
+    currentFrameworkVersion?: string;
     currentProjectIsSite?: boolean;
     currentProjectIsStrictSite?: boolean;
     currentProjectIsDependencySite?: boolean;
