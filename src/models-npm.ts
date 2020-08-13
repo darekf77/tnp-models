@@ -161,7 +161,7 @@ export namespace ModelsNpm {
       /**
        * Standalone project generated for release
        */
-      isGeneratedForRelease?:boolean;
+      isGeneratedForRelease?: boolean;
       /**
        * Usable only in workspace children
        * Required workspace children for particular workspcae child
@@ -183,6 +183,7 @@ export namespace ModelsNpm {
         ignoreDepsPattern?: string[];
         includeOnly?: string[];
         includeAsDev?: string[] | '*';
+        linkedFolders?: { from: string; to: string; }[];
         dependencies?: DependenciesFromPackageJsonStyle;
       }
     };
