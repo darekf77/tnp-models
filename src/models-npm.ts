@@ -94,6 +94,7 @@ export namespace ModelsNpm {
        * project is template for other project
        */
       isCoreProject: boolean;
+      additionalNpmNames: boolean;
       /**
        * only for container
        */
