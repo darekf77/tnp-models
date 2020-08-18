@@ -34,6 +34,10 @@ export namespace ModelsEnvinronment {
     pathes?: any;
     config?: any;
     configsFromJs?: any;
+    /**
+     * I will check if code should be available for npm version
+     */
+    notForNpm?: boolean;
     isCoreProject?: boolean; // generated
     isStandaloneProject?: boolean; // generated
     name?: EnvironmentName; // generated
