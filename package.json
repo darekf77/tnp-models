@@ -222,7 +222,7 @@
     "task.js": "^0.1.5",
     "tnp-db": "0.0.8",
     "tnp-helpers": "0.0.6",
-    "tnp-models": "0.0.6",
+    "tnp-models": "0.0.7",
     "ts-loader": "7.0.4",
     "ts-node": "~8.3.0",
     "tsickle": "^0.26.0",
