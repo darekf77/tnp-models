@@ -4,9 +4,6 @@ import * as envModels from './models-environment';
 import * as devModels from './models-dev';
 import * as systemModels from './models-system';
 import * as otherModels from './models-other';
-//#region @backend
-import * as morphiModels from 'morphi';
-//#endregion
 
 export namespace Models {
   export import libs = libsModels.ModelsLibTypes;
@@ -15,7 +12,4 @@ export namespace Models {
   export import dev = devModels.ModelsDev;
   export import system = systemModels.ModelsSystem;
   export import other = otherModels.ModelsOther;
-  //#region @backend
-  export import morphi = morphiModels.Models;
-  //#endregion
 }
