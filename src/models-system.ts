@@ -1,5 +1,10 @@
 export namespace ModelsSystem {
 
+  export interface RegisterServiceOptions {
+    killAlreadyRegisterd?: boolean;
+    actionWhenAssignedPort?: (itWasRegistered: boolean, registerdOnPort?: number) => any;
+  }
+
   //#region @backend
   export class SystemService {
 
