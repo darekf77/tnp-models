@@ -63,7 +63,7 @@ export namespace ModelsDev {
     // detached?: boolean;
     cwd?: string;
     prefix?: string;
-
+    detach?: boolean;
     /**
      * Try command again after fail after n miliseconds
      */
