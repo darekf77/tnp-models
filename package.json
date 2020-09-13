@@ -21,7 +21,7 @@
     }
   },
   "name": "tnp-models",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": false,
   "description": "",
   "main": "index.js",
@@ -40,7 +40,7 @@
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "dependencies": {
     "lodash": "^4.17.4",
-    "typescript-class-helpers": "1.0.3"
+    "typescript-class-helpers": "1.0.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.3",
@@ -175,11 +175,11 @@
     "mkdirp": "^0.5.1",
     "mocha": "^5.2.0",
     "moment": "^2.22.2",
-    "morphi": "3.1.14",
+    "morphi": "4.0.1",
     "ng-packagr": "^5.7.1",
     "ng2-file-upload": "^1.3.0",
-    "ng2-logger": "3.0.12",
-    "ng2-rest": "10.0.4",
+    "ng2-logger": "3.0.13",
+    "ng2-rest": "11.0.2",
     "ngx-bootstrap": "^5.2.0",
     "ngx-breadcrumbs": "0.0.3",
     "ngx-editor": "^4.1.0",
