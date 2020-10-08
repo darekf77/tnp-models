@@ -125,6 +125,8 @@ export namespace ModelsNpm {
            * list of package to dedupe
            */
           dedupe: string[];
+
+          stubForBackend: string[];
           /**
            * Comon dependencies for all kinds of project types
            */
