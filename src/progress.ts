@@ -3,9 +3,6 @@ import { CLASS } from 'typescript-class-helpers';
 
 //#region @backend
 declare const global: any;
-if (!global['ENV']) {
-  global['ENV'] = {};
-}
 //#endregion
 
 export interface IPROGRESS_DATA {
@@ -83,6 +80,3 @@ export class PROGRESS_DATA implements IPROGRESS_DATA {
 
 
 }
-//#region @backend
-global['ENV']['PROGRESS_DATA'] = PROGRESS_DATA;
-//#endregion
