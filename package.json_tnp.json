@@ -1,0 +1,21 @@
+{
+  "resources": [],
+  "type": "isomorphic-lib",
+  "version": "v2",
+  "overrided": {
+    "ignoreDepsPattern": [],
+    "includeAsDev": [],
+    "includeOnly": [
+      "lodash",
+      "typescript-class-helpers"
+    ],
+    "dependencies": {},
+    "linkedFolders": []
+  },
+  "linkedProjects": [],
+  "libReleaseOptions": {
+    "nodts": false,
+    "obscure": false,
+    "ugly": false
+  }
+}
