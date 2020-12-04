@@ -51,7 +51,14 @@ export namespace ModelsNpm {
 
   export type Package = { name: string; version?: string; installType?: InstalationType; };
 
-  export type DependenciesFromPackageJsonStyle = { [name: string]: string; }
+  export type DependenciesFromPackageJsonStyle = { [name: string]: string; };
+
+  export type TargetProject = {
+    path?: string;
+    origin: string;
+    branch: string;
+    links: string[];
+  }
 
   export interface IPackageJSON {
     name: string;
@@ -86,6 +93,7 @@ export namespace ModelsNpm {
         ugly?: boolean;
         nodts?: boolean;
       },
+      targetProjects: TargetProject[],
       /**
        * framework available inside project/app
        */
