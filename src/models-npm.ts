@@ -1,5 +1,6 @@
 import { ModelsEnvinronment } from './models-environment';
 import { ModelsLibTypes } from './models-libs';
+import { ConfigModels } from 'tnp-config';
 
 export namespace ModelsNpm {
 
@@ -60,144 +61,152 @@ export namespace ModelsNpm {
     links: string[];
   }
 
-  export interface IPackageJSON {
+  export interface TnpIPackageJSONOverride {
+    scripts?: { [script in string]: string; };
+    description?: string;
+    license?: string;
+    private?: boolean;
+    author?: string;
+    homepage?: string;
+    main?: string;
+  }
+
+  export interface TnpData extends TnpIPackageJSONOverride {
+    type: ModelsLibTypes.LibType;
+    version?: ConfigModels.FrameworkVersion,
+    /**
+     * link your local projects *.ts files inside this project.. through tsconfig pathes
+     * Example:
+     *  - local projct 'tnp-helper' with 'src' folder
+     *  -> will be available inside:
+     *     import {  from 'tnp-helper';
+     */
+    linkedProjects?: string[];
+    libReleaseOptions: {
+      obscure?: boolean;
+      ugly?: boolean;
+      nodts?: boolean;
+    },
+    targetProjects: TargetProject[],
+    /**
+     * framework available inside project/app
+     */
+    frameworks?: ModelsEnvinronment.UIFramework[];
+    /**
+     * project is template for other project
+     */
+    isCoreProject: boolean;
+    additionalNpmNames: boolean;
+    /**
+     * only for container
+     */
+    overrideCoreDeps?: boolean;
+    /**
+     * Easy way to skip browser compilation
+     */
+    isCommandLineToolOnly?: boolean;
+    /**
+     * Only for isomorphic lib
+     * - if true => generate controllers.ts, entities.ts
+     */
+    useFramework: boolean;
+    /**
+     * Core and contant dependecies for all projects (workspace type/standalone)
+     */
+    core: {
+      dependencies: {
+        /**
+         * this dependenices are always included in some way
+         */
+        always?: string[];
+        /**
+         * this dependencies are only included as devDependencies
+         */
+        asDevDependencies?: string[];
+        /**
+         * list of package to dedupe
+         */
+        dedupe: string[];
+
+        stubForBackend: string[];
+        /**
+         * Comon dependencies for all kinds of project types
+         */
+        common: DependenciesFromPackageJsonStyle | { [groupAlias: string]: DependenciesFromPackageJsonStyle };
+        /**
+         * Dependencies only for specyfic project type
+         */
+        onlyFor: { [libType: string]: DependenciesFromPackageJsonStyle | { [groupAlias: string]: DependenciesFromPackageJsonStyle }; }
+      }
+    }
+    /**
+     * Only for site projects.
+     * Relative path to baseline.
+     */
+    basedOn: string,
+    /**
+     * dependency site baselines
+     */
+    dependsOn: string[],
+    /**
+     * Static resurces for standalone project, that are
+     * going to be included in bundle
+     */
+    resources?: string[];
+    /**
+     * Allowed environment for poroject
+     */
+    allowedEnv?: ModelsEnvinronment.EnvironmentName[];
+    /**
+     * Check wheter project is generated for static build.
+     * Generated projects are inside dist folder in workspace project
+     */
+    isGenerated?: boolean;
+
+    /**
+     * Standalone project generated for release
+     */
+    isGeneratedForRelease?: boolean;
+    /**
+     * Usable only in workspace children
+     * Required workspace children for particular workspcae child
+     */
+    required?: string[],
+    /**
+     * Usable only in workspace children
+     * Required workspace servers children for particular workspcae child
+     * if server don't need lib that is required for
+     * can be put into required[];
+     */
+    requiredServers?: string[],
+    /**
+     * Override automation generation
+     */
+    overrided: {
+      tsconfig?: Object;
+      dedupe?: string[];
+      ignoreDepsPattern?: string[];
+      includeOnly?: string[];
+      includeAsDev?: string[] | '*';
+      linkedFolders?: { from: string; to: string; }[];
+      dependencies?: DependenciesFromPackageJsonStyle;
+    }
+  };
+
+  export interface IPackageJSON extends TnpIPackageJSONOverride {
     name: string;
     husky?: {
       hooks: {
         'pre-push': string;
       }
     };
-    version: string;
+    version?: string;
     bin?: any;
-    main?: string;
     preferGlobal?: boolean;
-    engines?: { node: string; npm: string; }
-    license?: string;
-    private?: boolean;
-
+    engines?: { node: string; npm: string; };
     dependencies?: DependenciesFromPackageJsonStyle;
     devDependencies?: DependenciesFromPackageJsonStyle;
-    tnp: {
-      type: ModelsLibTypes.LibType;
-      version?: 'v1' | 'v2',
-      /**
-       * link your local projects *.ts files inside this project.. through tsconfig pathes
-       * Example:
-       *  - local projct 'tnp-helper' with 'src' folder
-       *  -> will be available inside:
-       *     import {  from 'tnp-helper';
-       */
-      linkedProjects?: string[];
-      libReleaseOptions: {
-        obscure?: boolean;
-        ugly?: boolean;
-        nodts?: boolean;
-      },
-      targetProjects: TargetProject[],
-      /**
-       * framework available inside project/app
-       */
-      frameworks?: ModelsEnvinronment.UIFramework[];
-      /**
-       * project is template for other project
-       */
-      isCoreProject: boolean;
-      additionalNpmNames: boolean;
-      /**
-       * only for container
-       */
-      overrideCoreDeps?: boolean;
-      /**
-       * Easy way to skip browser compilation
-       */
-      isCommandLineToolOnly?: boolean;
-      /**
-       * Only for isomorphic lib
-       * - if true => generate controllers.ts, entities.ts
-       */
-      useFramework: boolean;
-      /**
-       * Core and contant dependecies for all projects (workspace type/standalone)
-       */
-      core: {
-        dependencies: {
-          /**
-           * this dependenices are always included in some way
-           */
-          always?: string[];
-          /**
-           * this dependencies are only included as devDependencies
-           */
-          asDevDependencies?: string[];
-          /**
-           * list of package to dedupe
-           */
-          dedupe: string[];
-
-          stubForBackend: string[];
-          /**
-           * Comon dependencies for all kinds of project types
-           */
-          common: DependenciesFromPackageJsonStyle | { [groupAlias: string]: DependenciesFromPackageJsonStyle };
-          /**
-           * Dependencies only for specyfic project type
-           */
-          onlyFor: { [libType: string]: DependenciesFromPackageJsonStyle | { [groupAlias: string]: DependenciesFromPackageJsonStyle }; }
-        }
-      }
-      /**
-       * Only for site projects.
-       * Relative path to baseline.
-       */
-      basedOn: string,
-      /**
-       * dependency site baselines
-       */
-      dependsOn: string[],
-      /**
-       * Static resurces for standalone project, that are
-       * going to be included in bundle
-       */
-      resources?: string[];
-      /**
-       * Allowed environment for poroject
-       */
-      allowedEnv?: ModelsEnvinronment.EnvironmentName[];
-      /**
-       * Check wheter project is generated for static build.
-       * Generated projects are inside dist folder in workspace project
-       */
-      isGenerated?: boolean;
-
-      /**
-       * Standalone project generated for release
-       */
-      isGeneratedForRelease?: boolean;
-      /**
-       * Usable only in workspace children
-       * Required workspace children for particular workspcae child
-       */
-      required?: string[],
-      /**
-       * Usable only in workspace children
-       * Required workspace servers children for particular workspcae child
-       * if server don't need lib that is required for
-       * can be put into required[];
-       */
-      requiredServers?: string[],
-      /**
-       * Override automation generation
-       */
-      overrided: {
-        tsconfig?: Object;
-        dedupe?: string[];
-        ignoreDepsPattern?: string[];
-        includeOnly?: string[];
-        includeAsDev?: string[] | '*';
-        linkedFolders?: { from: string; to: string; }[];
-        dependencies?: DependenciesFromPackageJsonStyle;
-      }
-    };
+    tnp: (TnpData & TnpIPackageJSONOverride);
   }
 
 }
