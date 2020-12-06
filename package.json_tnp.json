@@ -17,5 +17,14 @@
     "nodts": false,
     "obscure": false,
     "ugly": false
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": "",
+  "license": "MIT",
+  "private": false,
+  "author": "",
+  "homepage": "https://github.com/darekf77/tnp-models#readme",
+  "main": "index.js"
 }

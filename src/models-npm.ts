@@ -105,6 +105,7 @@ export namespace ModelsNpm {
      * Easy way to skip browser compilation
      */
     isCommandLineToolOnly?: boolean;
+    isGlobalSystemTool?: boolean;
     /**
      * Only for isomorphic lib
      * - if true => generate controllers.ts, entities.ts
