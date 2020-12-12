@@ -89,7 +89,7 @@ export namespace ModelsOther {
   export type FileExtension = 'ts' | 'js' | 'json' | 'html' | 'jpg' | 'png' | 'txt' | CutableFileExt;
 
 
-  export type RecreateFile = { where: string; from: string };
+  export type RecreateFile = { where: string; from: string; linked?: boolean; };
 
 
 
