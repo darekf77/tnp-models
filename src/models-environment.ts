@@ -2,7 +2,7 @@
 import { ConnectionOptions } from 'typeorm';
 //#endregion
 
-import { ModelsLibTypes } from './models-libs';
+import { ConfigModels } from 'tnp-config';
 import { ModelsNpm } from './models-npm';
 import { ModelsDev } from './models-dev';
 
@@ -17,7 +17,7 @@ export namespace ModelsEnvinronment {
     host?: string; // generated
     externalHost?: string;
     name: string;  // checked
-    type?: ModelsLibTypes.LibType; // checked
+    type?: ConfigModels.LibType; // checked
 
     port: number; // override type port
     //#region @backend
@@ -75,7 +75,7 @@ export namespace ModelsEnvinronment {
     currentProjectComponentsFolder?: string;
     currentProjectTsConfigPathes?: string;
     currentProjectTsConfigPathesForBrowser?: string;
-    currentProjectType?: ModelsLibTypes.LibType;
+    currentProjectType?: ConfigModels.LibType;
     packageJSON?: ModelsNpm.IPackageJSON;
 
     cloud?: {

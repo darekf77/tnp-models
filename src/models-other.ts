@@ -1,6 +1,5 @@
 import * as _ from 'lodash';
-import { ModelsLibTypes } from './models-libs';
-import { ModelsEnvinronment } from './models-environment';
+import { ConfigModels } from 'tnp-config';
 
 export namespace ModelsOther {
 
@@ -58,8 +57,8 @@ export namespace ModelsOther {
     tnpNoColorsMode: boolean;
     findNearestProject: boolean;
     findNearestProjectWithGitRoot: boolean;
-    findNearestProjectType: ModelsLibTypes.LibType;
-    findNearestProjectTypeWithGitRoot: ModelsLibTypes.LibType;
+    findNearestProjectType: ConfigModels.LibType;
+    findNearestProjectTypeWithGitRoot: ConfigModels.LibType;
     cwd: string;
   };
 

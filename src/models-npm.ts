@@ -1,5 +1,4 @@
 import { ModelsEnvinronment } from './models-environment';
-import { ModelsLibTypes } from './models-libs';
 import { ConfigModels } from 'tnp-config';
 
 export namespace ModelsNpm {
@@ -72,7 +71,7 @@ export namespace ModelsNpm {
   }
 
   export interface TnpData extends TnpIPackageJSONOverride {
-    type: ModelsLibTypes.LibType;
+    type: ConfigModels.LibType;
     version?: ConfigModels.FrameworkVersion,
     /**
      * link your local projects *.ts files inside this project.. through tsconfig pathes
