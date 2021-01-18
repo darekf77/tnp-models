@@ -81,6 +81,13 @@ export namespace ModelsNpm {
      *     import {  from 'tnp-helper';
      */
     linkedProjects?: string[];
+    /**
+     * check if scenario is group
+     */
+    isGroup?: boolean;
+    groupName?: string;
+
+    groupSize?: number;
     libReleaseOptions: {
       obscure?: boolean;
       ugly?: boolean;
