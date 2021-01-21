@@ -1,10 +1,12 @@
 import * as _ from 'lodash';
 import { ConfigModels } from 'tnp-config';
+import { CLASS } from 'typescript-class-helpers';
 
 export namespace ModelsOther {
 
   export type ModifiedFiles = { modifiedFiles: string[] };
 
+  @CLASS.NAME('Range')
   export class Range {
 
     static clone(r: Range) {
