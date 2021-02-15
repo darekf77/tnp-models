@@ -203,6 +203,7 @@ export namespace ModelsNpm {
     version?: string;
     bin?: any;
     preferGlobal?: boolean;
+    lastBuildTagHash?: string;
     engines?: { node: string; npm: string; };
     dependencies?: DependenciesFromPackageJsonStyle;
     devDependencies?: DependenciesFromPackageJsonStyle;
