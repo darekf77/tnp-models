@@ -26,6 +26,7 @@ export namespace ModelsNpm {
     remove?: boolean;
     npmPackages?: ModelsNpm.Package[],
     smoothInstall?: boolean;
+    smartInstallPreparing?: boolean;
   }
 
   export type NpmDependencyType = 'dependencies' | 'devDependencies' | 'peerDependencies' | 'optionalDependencies'
