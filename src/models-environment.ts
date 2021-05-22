@@ -8,10 +8,6 @@ import { ModelsDev } from './models-dev';
 
 export namespace ModelsEnvinronment {
 
-  export type EnvironmentName = 'local' | 'static' | 'dev' | 'stage' | 'prod' | 'online' | 'test' | 'qa' | 'custom';
-
-
-
   export interface EnvConfigProject {
     baseUrl: string;
     host?: string; // generated
@@ -27,8 +23,6 @@ export namespace ModelsEnvinronment {
     //#endregion
   }
 
-  export type UIFramework = 'bootstrap' | 'material' | 'ionic';
-
   export interface EnvConfig {
 
     pathes?: any;
@@ -40,8 +34,8 @@ export namespace ModelsEnvinronment {
     notForNpm?: boolean;
     isCoreProject?: boolean; // generated
     isStandaloneProject?: boolean; // generated
-    name?: EnvironmentName; // generated
-    frameworks?: UIFramework[];
+    name?: ConfigModels.EnvironmentName; // generated
+    frameworks?: ConfigModels.UIFramework[];
     domain?: string;
     dynamicGenIps?: boolean;
     ip?: string | 'localhost';

@@ -1,4 +1,3 @@
-import { ModelsEnvinronment } from './models-environment';
 import { ConfigModels } from 'tnp-config';
 
 export namespace ModelsNpm {
@@ -91,7 +90,7 @@ export namespace ModelsNpm {
     /**
      * framework available inside project/app
      */
-    frameworks?: ModelsEnvinronment.UIFramework[];
+    frameworks?: ConfigModels.UIFramework[];
     /**
      * project is template for other project
      */
@@ -157,7 +156,7 @@ export namespace ModelsNpm {
     /**
      * Allowed environment for poroject
      */
-    allowedEnv?: ModelsEnvinronment.EnvironmentName[];
+    allowedEnv?: ConfigModels.EnvironmentName[];
     /**
      * Check wheter project is generated for static build.
      * Generated projects are inside dist folder in workspace project

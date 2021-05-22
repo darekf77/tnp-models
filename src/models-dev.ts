@@ -1,5 +1,5 @@
 import { ModelsEnvinronment } from './models-environment';
-import { ModelsOther } from './models-other';
+import { ConfigModels } from 'tnp-config';
 
 export namespace ModelsDev {
 
@@ -10,7 +10,7 @@ export namespace ModelsDev {
      * init without installing node modules
      */
     struct?: boolean;
-    env: ModelsEnvinronment.EnvironmentName;
+    env: ConfigModels.EnvironmentName;
   }
 
 

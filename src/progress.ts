@@ -1,5 +1,6 @@
-import * as _ from 'lodash';
+import { _ } from 'tnp-core';
 import { CLASS } from 'typescript-class-helpers';
+import { ConfigModels } from 'tnp-config';
 
 //#region @backend
 declare const global: any;
@@ -11,12 +12,9 @@ export interface IPROGRESS_DATA {
    */
   value?: number;
   msg?: string;
-  type?: PROGRESS_DATA_TYPE;
+  type?: ConfigModels.PROGRESS_DATA_TYPE;
   date?: Date;
 }
-
-export type PROGRESS_DATA_TYPE = 'info' | 'error' | 'warning' | 'event';
-
 
 @CLASS.NAME('PROGRESS_DATA')
 export class PROGRESS_DATA implements IPROGRESS_DATA {
@@ -74,7 +72,7 @@ export class PROGRESS_DATA implements IPROGRESS_DATA {
   public value: number;
   public msg: string;
 
-  public type: PROGRESS_DATA_TYPE = 'event'
+  public type: ConfigModels.PROGRESS_DATA_TYPE = 'event'
 
   public date: Date;
 

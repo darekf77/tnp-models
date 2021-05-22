@@ -1,4 +1,4 @@
-import * as _ from 'lodash';
+import { _ } from 'tnp-core';
 import { ConfigModels } from 'tnp-config';
 import { CLASS } from 'typescript-class-helpers';
 

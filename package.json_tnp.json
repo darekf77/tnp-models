@@ -6,7 +6,6 @@
     "ignoreDepsPattern": [],
     "includeAsDev": [],
     "includeOnly": [
-      "lodash",
       "typescript-class-helpers"
     ],
     "dependencies": {},
