@@ -85,7 +85,21 @@ export namespace ModelsOther {
 
   export type FileEvent = 'created' | 'changed' | 'removed' | 'rename';
 
-  export type CutableFileExt = 'scss' | 'css' | 'sass' | 'html' | 'ts';
+  export type CutableFileExt = ''
+    | 'scss'
+    | 'css'
+    | 'sass'
+    | 'html'
+    | 'ts'
+    | 'js';
+  export const CutableFileExtArr = [
+    'scss',
+    'css',
+    'sass',
+    'html',
+    'ts',
+    'js',
+  ]
 
   export type FileExtension = 'ts' | 'js' | 'json' | 'html' | 'jpg' | 'png' | 'txt' | CutableFileExt;
 
