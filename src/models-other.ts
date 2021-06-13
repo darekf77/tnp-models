@@ -98,7 +98,6 @@ export namespace ModelsOther {
     'sass',
     'html',
     'ts',
-    'js',
   ]
 
   export type FileExtension = 'ts' | 'js' | 'json' | 'html' | 'jpg' | 'png' | 'txt' | CutableFileExt;

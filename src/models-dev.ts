@@ -51,13 +51,15 @@ export namespace ModelsDev {
 
   export type BuildDir = 'dist' | 'bundle' | 'docs';
 
-  export type ReplacementString = '@backend' | '@backendFunc' | '@cutCodeIfTrue' | '@cutCodeIfTrue' | '@notForNpm';
+  export type ReplacementString = '@backend' | '@backendFunc' | '@cutCodeIfTrue' | '@cutCodeIfFalse' | '@notForNpm';
   export const ReplacementStringArr = [
-    '@backend', '@backendFunc', '@cutCodeIfTrue', '@cutCodeIfTrue', "@notForNpm"
+    '@backend', '@backendFunc', '@cutCodeIfTrue', '@cutCodeIfFalse', "@notForNpm"
   ] as ReplacementString[];
 
-  export type Replacement = (string | [string, string] | [string,
-    (expression: any, env: ModelsEnvinronment.EnvConfig) => () => boolean]);
+  export type Replacement = (ReplacementString
+    | [ReplacementString, string]
+    | [ReplacementString, (expression: any, env: ModelsEnvinronment.EnvConfig) => () => boolean]
+  );
 
   export interface ReplaceOptionsExtended {
 
