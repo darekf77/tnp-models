@@ -40,6 +40,7 @@ export namespace ModelsDev {
     obscure?: boolean;
     nodts?: boolean;
     args?: string;
+    automaticRelease?: boolean;
     bumbVersionIn?: string[];
   }
 
