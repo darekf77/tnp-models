@@ -42,6 +42,7 @@ export namespace ModelsDev {
     args?: string;
     automaticRelease?: boolean;
     bumbVersionIn?: string[];
+    all?: boolean;
   }
 
   export interface BuildServeArgsServe {
