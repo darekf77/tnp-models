@@ -206,6 +206,7 @@ export namespace ModelsNpm {
     lastBuildTagHash?: string;
     engines?: { node: string; npm: string; };
     dependencies?: DependenciesFromPackageJsonStyle;
+    peerDependencies?:DependenciesFromPackageJsonStyle;
     devDependencies?: DependenciesFromPackageJsonStyle;
     tnp: (TnpData & TnpIPackageJSONOverride);
   }
