@@ -43,6 +43,7 @@ export namespace ModelsDev {
     automaticRelease?: boolean;
     bumbVersionIn?: string[];
     all?: boolean;
+    releaseType: 'major' | 'minor' | 'patch' | 'build'
   }
 
   export interface BuildServeArgsServe {

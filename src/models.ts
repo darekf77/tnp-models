@@ -6,6 +6,10 @@ import * as otherModels from './models-other';
 import * as realtimeModels from './models-realtime';
 
 export namespace Models {
+  export type InlinePkg = {
+    isIsomorphic: boolean;
+    realName: string;
+  }
   export import npm = npmModels.ModelsNpm;
   export import env = envModels.ModelsEnvinronment;
   export import dev = devModels.ModelsDev;
