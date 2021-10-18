@@ -253,7 +253,7 @@
     "tnp-core": "~1.0.30",
     "tnp-db": "~0.0.35",
     "tnp-helpers": "~0.0.64",
-    "tnp-models": "~0.0.34",
+    "tnp-models": "~0.0.35",
     "tnp-tools": "~0.0.44",
     "tnp-ui": "~0.0.31",
     "ts-loader": "7.0.4",
@@ -273,5 +273,5 @@
     "webpack-cli": "3.3.11",
     "zone.js": "0.10.2"
   },
-  "lastBuildTagHash": "3a1b55dabfa5b54ee93563989f13869fbd9f4634"
+  "lastBuildTagHash": "f3d561008cc83eefa185658338ddf2f6f5dc564f"
 }
