@@ -81,6 +81,16 @@ export namespace ModelsNpm {
      *     import {  from 'tnp-helper';
      */
     linkedProjects?: string[];
+
+    /**
+     * worker plugins for cli
+     *
+     * workerPlugin: {
+     *  'tnp-db': '',
+     *  'tnp-db-autoupdate': '/up'
+     * }
+     */
+    workerPlugins?: { [pathOrName in string]: string };
     libReleaseOptions: {
       obscure?: boolean;
       ugly?: boolean;
@@ -206,7 +216,7 @@ export namespace ModelsNpm {
     lastBuildTagHash?: string;
     engines?: { node: string; npm: string; };
     dependencies?: DependenciesFromPackageJsonStyle;
-    peerDependencies?:DependenciesFromPackageJsonStyle;
+    peerDependencies?: DependenciesFromPackageJsonStyle;
     devDependencies?: DependenciesFromPackageJsonStyle;
     tnp: (TnpData & TnpIPackageJSONOverride);
   }
