@@ -4,7 +4,7 @@ import * as devModels from './models-dev';
 import * as systemModels from './models-system';
 import * as otherModels from './models-other';
 import * as realtimeModels from './models-realtime';
-
+import * as dbModels from './models-db';
 export namespace Models {
   export type InlinePkg = {
     isIsomorphic: boolean;
@@ -16,4 +16,5 @@ export namespace Models {
   export import system = systemModels.ModelsSystem;
   export import other = otherModels.ModelsOther;
   export import realtime = realtimeModels.ModelsRealtime;
+  export import db = dbModels.ModelsDb;
 }

@@ -5,7 +5,6 @@ export namespace ModelsSystem {
     actionWhenAssignedPort?: (itWasRegistered: boolean, registerdOnPort?: number) => any;
   }
 
-  //#region @backend
   export class SystemService {
 
     constructor(
@@ -15,7 +14,6 @@ export namespace ModelsSystem {
 
     }
   }
-  //#endregion
 
   export interface WatchOptions {
     cwd: string;

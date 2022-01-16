@@ -26,7 +26,7 @@ export namespace ModelsOther {
       public from: number,
       public to: number) {
       if (_.isNative(from) || _.isNative(to)) {
-        throw `This Range type is only for positive numbers`
+        throw new Error(`This Range type is only for positive numbers`);
       }
     }
 
