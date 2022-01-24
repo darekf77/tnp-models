@@ -219,6 +219,10 @@ export namespace ModelsNpm {
     peerDependencies?: DependenciesFromPackageJsonStyle;
     devDependencies?: DependenciesFromPackageJsonStyle;
     tnp: (TnpData & TnpIPackageJSONOverride);
+    recreatedFrom: {
+      'tnp.json5'?: boolean;
+      'tnp.json'?: boolean;
+    }
   }
 
 }
