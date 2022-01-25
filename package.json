@@ -48,7 +48,7 @@
   },
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "dependencies": {
-    "typescript-class-helpers": "~1.0.42"
+    "typescript-class-helpers": "~~1.0.42"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.3",
