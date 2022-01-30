@@ -68,6 +68,7 @@ export namespace ModelsNpm {
     author?: string;
     homepage?: string;
     main?: string;
+    name?: string;
   }
 
   export interface TnpData extends TnpIPackageJSONOverride {
@@ -219,10 +220,10 @@ export namespace ModelsNpm {
     peerDependencies?: DependenciesFromPackageJsonStyle;
     devDependencies?: DependenciesFromPackageJsonStyle;
     tnp: (TnpData & TnpIPackageJSONOverride);
-    recreatedFrom: {
-      'tnp.json5'?: boolean;
-      'tnp.json'?: boolean;
-    }
+    firedev: (TnpData & TnpIPackageJSONOverride);
   }
 
+  export type Tnp = TnpData & TnpIPackageJSONOverride;
+
 }
+
