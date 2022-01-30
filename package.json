@@ -274,5 +274,8 @@
     "webpack-cli": "~3.3.11",
     "zone.js": "~0.10.2"
   },
-  "lastBuildTagHash": "04e4dbc647ea0a29400b5f7be619c45effdf91e8"
+  "lastBuildTagHash": "04e4dbc647ea0a29400b5f7be619c45effdf91e8",
+  "recreatedFrom": {
+    "tnp.json": true
+  }
 }
