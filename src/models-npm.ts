@@ -71,6 +71,8 @@ export namespace ModelsNpm {
     name?: string;
   }
 
+  export type TrustedType = { [frameworkVersion in ConfigModels.FrameworkVersion]: (string | string[]) };
+
   export interface TnpData extends TnpIPackageJSONOverride {
     type: ConfigModels.LibType;
     version?: ConfigModels.FrameworkVersion,
@@ -134,6 +136,7 @@ export namespace ModelsNpm {
          * this dependencies are only included as devDependencies
          */
         asDevDependencies?: string[];
+        trusted: TrustedType;
         /**
          * list of package to dedupe
          */
