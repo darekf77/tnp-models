@@ -19,5 +19,6 @@
   "dependencies": {
     "typescript-class-helpers": "~1.0.49"
   },
-  "lastBuildTagHash": "04e4dbc647ea0a29400b5f7be619c45effdf91e8"
+  "lastBuildTagHash": "04e4dbc647ea0a29400b5f7be619c45effdf91e8",
+  "devDependencies": {}
 }
