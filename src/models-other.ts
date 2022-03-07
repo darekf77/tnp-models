@@ -78,20 +78,9 @@ export namespace ModelsOther {
   }
 
 
-
-
-
   export type SourceFolder = 'src' | 'components' | 'custom' | 'tmp-src';
 
-  export type FileEvent = 'created' | 'changed' | 'removed' | 'rename';
 
-  export type CutableFileExt = ''
-    | 'scss'
-    | 'css'
-    | 'sass'
-    | 'html'
-    | 'ts'
-    | 'js';
   export const CutableFileExtArr = [
     'scss',
     'css',
@@ -100,7 +89,9 @@ export namespace ModelsOther {
     'ts',
   ]
 
-  export type FileExtension = 'ts' | 'js' | 'json' | 'html' | 'jpg' | 'png' | 'txt' | CutableFileExt;
+  export const ImageFileExtensionArr: ConfigModels.ImageFileExtension[] = [
+    'jpg', 'jpeg', 'png', 'svg'
+  ];
 
 
   export type RecreateFile = { where: string; from: string; linked?: boolean; };

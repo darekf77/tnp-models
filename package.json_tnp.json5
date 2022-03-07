@@ -1,7 +1,5 @@
 {
   "resources": [],
-  "type": "isomorphic-lib",
-  "version": "v2",
   "overrided": {
     "ignoreDepsPattern": [],
     "includeAsDev": [],
@@ -17,6 +15,8 @@
     "obscure": false,
     "ugly": false
   },
+  "type": "isomorphic-lib",
+  "version": "v3",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
