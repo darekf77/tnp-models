@@ -1,30 +1,29 @@
 {
-  "resources": [],
-  "overrided": {
-    "ignoreDepsPattern": [],
-    "includeAsDev": [],
-    "includeOnly": [
-      "typescript-class-helpers"
-    ],
-    "dependencies": {},
-    "linkedFolders": []
+  resources: [],
+  overrided: {
+    ignoreDepsPattern: [],
+    includeAsDev: [],
+    includeOnly: ["typescript-class-helpers"],
+    dependencies: {},
+    linkedFolders: [],
   },
-  "linkedProjects": [],
-  "libReleaseOptions": {
-    "nodts": false,
-    "obscure": false,
-    "ugly": false
+  linkedProjects: [],
+  libReleaseOptions: {
+    nodts: false,
+    obscure: false,
+    ugly: false,
   },
-  "type": "isomorphic-lib",
-  "version": "v3",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  type: "isomorphic-lib",
+  version: "v3",
+  additionalNpmNames: ["firedev-models"],
+  scripts: {
+    test: 'echo "Error: no test specified" && exit 1',
   },
-  "description": "",
-  "license": "MIT",
-  "private": false,
-  "author": "",
-  "homepage": "https://github.com/darekf77/tnp-models#readme",
-  "main": "index.js",
-  "workerPlugins": {}
+  description: "",
+  license: "MIT",
+  private: false,
+  author: "",
+  homepage: "https://github.com/darekf77/tnp-models#readme",
+  main: "index.js",
+  workerPlugins: {},
 }
