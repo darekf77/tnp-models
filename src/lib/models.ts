@@ -5,6 +5,7 @@ import * as systemModels from './models-system';
 import * as otherModels from './models-other';
 import * as realtimeModels from './models-realtime';
 import * as dbModels from './models-db';
+import * as tnpLabels from './labels';
 export namespace Models {
   export type InlinePkg = {
     isIsomorphic: boolean;
@@ -17,4 +18,5 @@ export namespace Models {
   export import other = otherModels.ModelsOther;
   export import realtime = realtimeModels.ModelsRealtime;
   export import db = dbModels.ModelsDb;
+  export import label = tnpLabels.label;
 }
