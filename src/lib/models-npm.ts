@@ -76,6 +76,7 @@ export namespace ModelsNpm {
   export interface TnpData extends TnpIPackageJSONOverride {
     type: ConfigModels.LibType;
     version?: ConfigModels.FrameworkVersion,
+    smart?: boolean;
     /**
      * link your local projects *.ts files inside this project.. through tsconfig pathes
      * Example:

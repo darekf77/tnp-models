@@ -1,4 +1,17 @@
 {
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#bac252",
+    "activityBar.foreground": "#000000"
+  },
+  "editor.rulers": [
+    100,
+    120
+  ],
+  "html.format.wrapAttributes": "force-aligned",
+  "workbench.colorTheme": "Default Light+",
+  "tslint.autoFixOnSave": true,
+  "eslint.enable": false,
+  "tslint.enable": false,
   "files.exclude": {
     "webpack.backend-bundle-build.js": true,
     "node_modules": true,
@@ -43,18 +56,5 @@
     "docs": true,
     "logo.svg": true,
     "package.json_tnp.json": true
-  },
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#bac252",
-    "activityBar.foreground": "#000000"
-  },
-  "editor.rulers": [
-    100,
-    120
-  ],
-  "html.format.wrapAttributes": "force-aligned",
-  "workbench.colorTheme": "Default Light+",
-  "tslint.autoFixOnSave": true,
-  "eslint.enable": false,
-  "tslint.enable": false
+  }
 }
