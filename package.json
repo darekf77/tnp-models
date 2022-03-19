@@ -20,5 +20,6 @@
     "typescript-class-helpers": "~13.0.6"
   },
   "lastBuildTagHash": "04e4dbc647ea0a29400b5f7be619c45effdf91e8",
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {}
 }
