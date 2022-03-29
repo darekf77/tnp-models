@@ -77,6 +77,7 @@ export namespace ModelsNpm {
     type: ConfigModels.LibType;
     version?: ConfigModels.FrameworkVersion,
     smart?: boolean;
+    monorepo?: boolean;
     /**
      * link your local projects *.ts files inside this project.. through tsconfig pathes
      * Example:
