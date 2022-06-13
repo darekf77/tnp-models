@@ -19,7 +19,7 @@
   "dependencies": {
     "typescript-class-helpers": "~13.0.21"
   },
-  "lastBuildTagHash": "74530a1911e923623b6524a1251fe48c33f1828e",
+  "lastBuildTagHash": "0a2ebb6f64d12aae93f3b2aaf35bab8fe6e727d6",
   "main": "index.js",
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.2.5",
@@ -236,7 +236,7 @@
     "tnp-core": "~13.0.47",
     "tnp-db": "~13.0.28",
     "tnp-helpers": "~13.0.31",
-    "tnp-models": "~13.0.21",
+    "tnp-models": "~13.0.22",
     "tnp-ui": "~13.0.18",
     "ts-debug": "1.3.0",
     "ts-loader": "2.3.1",
