@@ -68,6 +68,8 @@ export namespace ModelsNpm {
     author?: string;
     homepage?: string;
     main?: string;
+    module?: string;
+    exports?: object;
     name?: string;
   }
 
