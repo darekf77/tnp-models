@@ -46,6 +46,22 @@ export namespace ModelsDev {
     releaseType: 'major' | 'minor' | 'patch' | 'build'
   }
 
+
+export interface TscCompileOptions {
+  cwd: string;
+  watch?: boolean;
+  outDir?: string;
+  generateDeclarations?: boolean;
+  tsExe?: string;
+  diagnostics?: boolean;
+  hideErrors?: boolean;
+  debug?: boolean;
+  locationOfMainProject: string;
+  isBrowserBuild?: boolean;
+  buildType: 'dist' | 'bundle';
+}
+
+
   export interface BuildServeArgsServe {
     port: string;
     baseUrl: string;
