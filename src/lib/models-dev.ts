@@ -37,7 +37,6 @@ export namespace ModelsDev {
     prod?: boolean;
     useTempFolder?: boolean;
     uglify?: boolean;
-    websql?: boolean;
     obscure?: boolean;
     nodts?: boolean;
     args?: string;
@@ -94,6 +93,7 @@ export interface TscCompileOptions {
     watch?: boolean;
     nodts?: boolean;
     uglify?: boolean;
+    websql?: boolean;
     obscure?: boolean;
     watchOnly?: boolean;
     outDir?: BuildDir;
