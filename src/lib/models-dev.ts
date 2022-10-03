@@ -10,6 +10,7 @@ export namespace ModelsDev {
      * init without installing node modules
      */
     struct?: boolean;
+    websql?: boolean;
     env: ConfigModels.EnvironmentName;
   }
 
@@ -47,20 +48,20 @@ export namespace ModelsDev {
   }
 
 
-export interface TscCompileOptions {
-  cwd: string;
-  watch?: boolean;
-  outDir?: string;
-  websql?: boolean;
-  generateDeclarations?: boolean;
-  tsExe?: string;
-  diagnostics?: boolean;
-  hideErrors?: boolean;
-  debug?: boolean;
-  locationOfMainProject: string;
-  isBrowserBuild?: boolean;
-  buildType: 'dist' | 'bundle';
-}
+  export interface TscCompileOptions {
+    cwd: string;
+    watch?: boolean;
+    outDir?: string;
+    websql?: boolean;
+    generateDeclarations?: boolean;
+    tsExe?: string;
+    diagnostics?: boolean;
+    hideErrors?: boolean;
+    debug?: boolean;
+    locationOfMainProject: string;
+    isBrowserBuild?: boolean;
+    buildType: 'dist' | 'bundle';
+  }
 
 
   export interface BuildServeArgsServe {
