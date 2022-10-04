@@ -1,5 +1,6 @@
 {
   resources: [],
+
   overrided: {
     ignoreDepsPattern: [],
     includeAsDev: [],
@@ -7,18 +8,24 @@
     dependencies: {},
     linkedFolders: [],
   },
+
   linkedProjects: [],
+  linkedRepos: [],
+
   libReleaseOptions: {
     nodts: false,
     obscure: false,
     ugly: false,
   },
+
   type: "isomorphic-lib",
   version: "v3",
   additionalNpmNames: ["firedev-models"],
+
   scripts: {
     test: 'echo "Error: no test specified" && exit 1',
   },
+
   description: "",
   license: "MIT",
   private: false,

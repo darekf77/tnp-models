@@ -75,6 +75,14 @@ export namespace ModelsNpm {
 
   export type TrustedType = { [frameworkVersion in ConfigModels.FrameworkVersion]: (string | string[]) };
 
+  export type LinkedRepo = {
+    origin: string;
+    relativeFoldersLinks?: {
+      from: string;
+      to: string;
+    }[];
+  }
+
   export interface TnpData extends TnpIPackageJSONOverride {
     type: ConfigModels.LibType;
     version?: ConfigModels.FrameworkVersion,
@@ -88,6 +96,7 @@ export namespace ModelsNpm {
      *     import {  from 'tnp-helper';
      */
     linkedProjects?: string[];
+    linkedRepos?: LinkedRepo[];
 
     /**
      * worker plugins for cli
