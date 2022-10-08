@@ -75,6 +75,10 @@ export namespace ModelsOther {
     ommitSourceCode?: boolean;
     regenerateProjectChilds?: boolean;
     useTempLocation?: boolean;
+    /**
+     * copy links as folders and files
+     */
+    dereference?: boolean;
   }
 
 
