@@ -70,7 +70,7 @@ export namespace ModelsDev {
     outDir: string;
   }
 
-  export type BuildDir = 'dist' | 'bundle' | 'docs';
+  export type BuildDir = 'dist' | 'bundle';
 
   export type ReplacementString = '@backend' | '@backendFunc' | '@cutCodeIfTrue' | '@cutCodeIfFalse' | '@notForNpm';
   export const ReplacementStringArr = [

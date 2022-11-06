@@ -11,8 +11,6 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-/linked-repos
-
 /tests-environments
 
 # System Files
@@ -26,8 +24,6 @@ Thumbs.db
 /bundle*
 /browser
 /browser*
-/websql
-/websql*
 /module*
 /backup
 /module
