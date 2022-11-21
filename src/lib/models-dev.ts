@@ -41,9 +41,19 @@ export namespace ModelsDev {
     obscure?: boolean;
     nodts?: boolean;
     args?: string;
+    /**
+     * quick automatic path release mode
+     */
     automaticRelease?: boolean;
     bumbVersionIn?: string[];
+    /**
+     * Force relase all project (ommit release cache)
+     */
     all?: boolean;
+    /**
+    * release only trusted packages for current framework version
+    */
+    trusted?: boolean;
     releaseType: 'major' | 'minor' | 'patch' | 'build'
   }
 
