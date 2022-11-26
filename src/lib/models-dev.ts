@@ -81,6 +81,7 @@ export namespace ModelsDev {
   }
 
   export type BuildDir = 'dist' | 'bundle';
+  export type BuildDirBrowser = 'browser' | 'websql';
 
   export type ReplacementString = '@backend' | '@backendFunc' | '@cutCodeIfTrue' | '@cutCodeIfFalse' | '@notForNpm';
   export const ReplacementStringArr = [
