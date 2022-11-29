@@ -4,8 +4,9 @@ import { ConfigModels } from 'tnp-config';
 export namespace ModelsDev {
 
   export type InitArgOptions = {
-    skipNodeModules: boolean;
-    recrusive: boolean;
+    skipNodeModules?: boolean;
+    recrusive?: boolean;
+    skipSmartContainerDistBundleInit?: boolean;
     /**
      * init without installing node modules
      */

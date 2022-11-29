@@ -86,6 +86,7 @@ export namespace ModelsNpm {
   export interface TnpData extends TnpIPackageJSONOverride {
     type: ConfigModels.LibType;
     version?: ConfigModels.FrameworkVersion,
+    smartContainerBuildTarget?: string;
     smart?: boolean;
     monorepo?: boolean;
     /**
