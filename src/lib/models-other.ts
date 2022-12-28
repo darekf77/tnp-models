@@ -85,14 +85,6 @@ export namespace ModelsOther {
   export type SourceFolder = 'src' | 'components' | 'custom' | 'tmp-src';
 
 
-  export const CutableFileExtArr = [
-    'scss',
-    'css',
-    'sass',
-    'html',
-    'ts',
-  ]
-
   export const ImageFileExtensionArr: ConfigModels.ImageFileExtension[] = [
     'jpg', 'jpeg', 'png', 'svg'
   ];

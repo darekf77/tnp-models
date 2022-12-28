@@ -13,6 +13,7 @@
   "eslint.enable": false,
   "tslint.enable": false,
   "files.exclude": {
+    "**/*____ORIGINAL____.ts": true,
     "tsconfig.backend.dist.json": true,
     "tsconfig.backend.bundle.json": true,
     "tsconfig.backend.dist.json.filetemplate": true,

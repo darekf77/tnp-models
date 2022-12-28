@@ -1,26 +1,7 @@
 {
-  "name": "tnp-models",
-  "version": "13.1.6",
-  "private": false,
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/darekf77/tnp-models.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/darekf77/tnp-models/issues"
-  },
-  "homepage": "https://github.com/darekf77/tnp-models#readme",
   "dependencies": {
     "typescript-class-helpers": "~13.1.7"
   },
-  "lastBuildTagHash": "c39f1a41382cc62f775c355e02141e146b306a0d",
-  "main": "index.js",
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.9",
     "@angular-devkit/core": "~13.3.9",
@@ -136,7 +117,7 @@
     "firedev-crud-deamon": "~13.1.25",
     "firedev-ports": "~13.1.29",
     "firedev-storage": "~13.1.20",
-    "firedev-typeorm": "~13.1.6",
+    "firedev-typeorm": "~13.1.7",
     "fkill": "6.1.0",
     "font-awesome": "4.7.0",
     "fs-extra": "8.1.0",
@@ -251,5 +232,16 @@
     "vpn-split": "~13.1.23",
     "watch": "1.0.2",
     "zone.js": "~0.11.4"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": "",
+  "license": "MIT",
+  "private": false,
+  "author": "",
+  "homepage": "https://github.com/darekf77/tnp-models#readme",
+  "main": "index.js",
+  "name": "tnp-models",
+  "version": "13.1.6"
 }
