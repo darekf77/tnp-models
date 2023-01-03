@@ -112,6 +112,7 @@ export namespace ModelsNpm {
       obscure?: boolean;
       ugly?: boolean;
       nodts?: boolean;
+      includeNodeModules?: boolean;
     },
     targetProjects: TargetProject[],
     /**

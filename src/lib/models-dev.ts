@@ -40,6 +40,7 @@ export namespace ModelsDev {
     useTempFolder?: boolean;
     uglify?: boolean;
     obscure?: boolean;
+    includeNodeModules?: boolean;
     nodts?: boolean;
     args?: string;
     /**
@@ -108,6 +109,7 @@ export namespace ModelsDev {
     uglify?: boolean;
     websql?: boolean;
     obscure?: boolean;
+    includeNodeModules?: boolean;
     watchOnly?: boolean;
     outDir?: BuildDir;
     appBuild?: boolean;
