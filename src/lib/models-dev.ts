@@ -56,6 +56,7 @@ export namespace ModelsDev {
     * release only trusted packages for current framework version
     */
     trusted?: boolean;
+    shouldReleaseLibrary?: boolean;
     releaseType: 'major' | 'minor' | 'patch';
   }
 
