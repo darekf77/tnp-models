@@ -25,6 +25,11 @@ export namespace ModelsEnvinronment {
 
   export interface EnvConfig {
 
+    /**
+     * replace title in firedev app
+     */
+    title?: string;
+
     pathes?: any;
     config?: any;
     configsFromJs?: any;
@@ -36,7 +41,14 @@ export namespace ModelsEnvinronment {
     isStandaloneProject?: boolean; // generated
     name?: ConfigModels.EnvironmentName; // generated
     frameworks?: ConfigModels.UIFramework[];
+    /**
+     * override domain name (use useDomain property to make it work)
+     */
     domain?: string;
+    /**
+     * actually build enviroment for domain from enviroment.js
+     */
+    useDomain?: boolean;
     dynamicGenIps?: boolean;
     ip?: string | 'localhost';
     workspace: {
