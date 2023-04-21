@@ -29,7 +29,18 @@ export namespace ModelsEnvinronment {
      * replace title in firedev app
      */
     title?: string;
-
+    /**
+     * override pwa manifest values
+     */
+    pwa?: {
+      name?: string;
+      short_name?: string;
+      start_url?: string;
+      // theme_color?: string;
+      // background_color?: string;
+      // display?: string;
+      // scope?: string;
+    },
     pathes?: any;
     config?: any;
     configsFromJs?: any;
