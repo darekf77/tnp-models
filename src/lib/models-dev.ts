@@ -6,6 +6,7 @@ export namespace ModelsDev {
   export type InitArgOptions = {
     skipNodeModules?: boolean;
     recrusive?: boolean;
+    branding?: boolean;
     skipSmartContainerDistBundleInit?: boolean;
     /**
      * init without installing node modules
@@ -44,9 +45,13 @@ export namespace ModelsDev {
     nodts?: boolean;
     args?: string;
     /**
-     * quick automatic path release mode
+     * quick automatic release of lib
      */
     automaticRelease?: boolean;
+    /**
+    * quick automatic release of docs app(s)
+    */
+    automaticReleaseDocs?: boolean;
     bumbVersionIn?: string[];
     /**
      * Force relase all project (ommit release cache)
