@@ -225,7 +225,7 @@
     "tnp-core": "~13.2.8",
     "tnp-db": "~13.1.16",
     "tnp-helpers": "~13.1.26",
-    "tnp-models": "~13.1.17",
+    "tnp-models": "~13.1.18",
     "tnp-ui": "~13.1.27",
     "ts-debug": "1.3.0",
     "ts-loader": "2.3.1",
@@ -253,5 +253,5 @@
   "main": "index.js",
   "name": "tnp-models",
   "version": "13.1.18",
-  "lastBuildTagHash": "6b64894ae55bed77060b20c018bb5b4adda6a779"
+  "lastBuildTagHash": "293299fd7f5414a4da2dc0e8f7eafb6468e9702d"
 }
