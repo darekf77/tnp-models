@@ -20,6 +20,7 @@ export namespace ModelsEnvinronment {
     $db?: ConnectionOptions;
     ommitAppBuild?: boolean;
     isWatchBuild?: boolean; // generated
+    isWebsqlBuild?: boolean; // generated
     //#endregion
   }
 
@@ -107,6 +108,7 @@ export namespace ModelsEnvinronment {
       date?: Date;
       options?: {
         isWatchBuild?: boolean;
+        isWebsqlBuild?: boolean;
         outDir?: ModelsDev.BuildDir;
       }
     }
