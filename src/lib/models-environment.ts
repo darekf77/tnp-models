@@ -24,6 +24,13 @@ export namespace ModelsEnvinronment {
     //#endregion
   }
 
+  export type FiredevLoaders = 'lds-default' |
+    'lds-ellipsis' |
+    'lds-facebook' |
+    'lds-grid' |
+    'lds-heart' |
+    'lds-ripple'
+
   export interface EnvConfig {
 
     /**
@@ -42,6 +49,24 @@ export namespace ModelsEnvinronment {
       // display?: string;
       // scope?: string;
     },
+
+    loading?: {
+      preAngularBootstrap?: {
+        loader?: {
+          name?: FiredevLoaders,
+          color?: string,
+        },
+        background?: string,
+      },
+      afterAngularBootstrap?: {
+        loader?: {
+          name?: FiredevLoaders;
+          color?: string;
+        },
+        background?: string;
+      },
+    },
+
     pathes?: any;
     config?: any;
     configsFromJs?: any;
