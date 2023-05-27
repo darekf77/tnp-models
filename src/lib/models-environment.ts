@@ -8,6 +8,11 @@ import { ModelsDev } from './models-dev';
 
 export namespace ModelsEnvinronment {
 
+  export interface FiredevLoaderConfig {
+    name?: FiredevLoaders;
+    color?: string;
+  }
+
   export interface EnvConfigProject {
     baseUrl: string;
     host?: string; // generated
@@ -51,18 +56,29 @@ export namespace ModelsEnvinronment {
     },
 
     loading?: {
+      /**
+       * this is persented before boostrapign of angular
+       * at the begining of first index.html fetch
+       */
       preAngularBootstrap?: {
-        loader?: {
-          name?: FiredevLoaders,
-          color?: string,
-        },
+        /**
+         * loder path to image or
+         * build in loader config
+         */
+        loader?: string | FiredevLoaderConfig,
         background?: string,
       },
+      /**
+       * this loader is presented when
+       * firedev app data is being loader
+       * (right after *preAngularBootstrap*)
+       */
       afterAngularBootstrap?: {
-        loader?: {
-          name?: FiredevLoaders;
-          color?: string;
-        },
+        /**
+        * loder path to image or
+        * build in loader config
+        */
+        loader?: string | FiredevLoaderConfig,
         background?: string;
       },
     },
@@ -106,6 +122,7 @@ export namespace ModelsEnvinronment {
     clientProjectName?: string;
     currentLibProjectSourceFolder?: 'src' | 'components';
     currentProjectName?: string;
+    currentProjectGenericName?: string;
     currentProjectLaunchConfiguration?: string;
     currentProjectTasksConfiguration?: string;
     currentProjectPort?: number;
