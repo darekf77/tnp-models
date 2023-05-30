@@ -16,7 +16,6 @@ export namespace ModelsNpm {
     useYarn?: boolean;
     pkg?: ModelsNpm.Package;
     reason: string;
-    smoothInstall?: boolean;
     remove?: boolean;
   }
 
@@ -24,7 +23,6 @@ export namespace ModelsNpm {
   export interface NpmInstallOptions {
     remove?: boolean;
     npmPackages?: ModelsNpm.Package[],
-    smoothInstall?: boolean;
     smartInstallPreparing?: boolean;
   }
 
