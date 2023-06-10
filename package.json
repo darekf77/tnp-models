@@ -1,4 +1,42 @@
 {
+  "tnp": {
+    "resources": [],
+    "overrided": {
+      "ignoreDepsPattern": [],
+      "includeAsDev": [],
+      "includeOnly": [
+        "typescript-class-helpers"
+      ],
+      "dependencies": {},
+      "linkedFolders": [],
+      "npmFixes": []
+    },
+    "linkedProjects": [],
+    "smartContainerBuildTarget": "",
+    "linkedRepos": [],
+    "libReleaseOptions": {
+      "nodts": false,
+      "obscure": false,
+      "ugly": false,
+      "includeNodeModules": false
+    },
+    "smartContainerTarget": "",
+    "type": "isomorphic-lib",
+    "version": "v4",
+    "additionalNpmNames": [
+      "firedev-models"
+    ],
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "description": "",
+    "license": "MIT",
+    "private": false,
+    "author": "",
+    "homepage": "https://github.com/darekf77/tnp-models#readme",
+    "main": "index.js",
+    "workerPlugins": {}
+  },
   "dependencies": {
     "typescript-class-helpers": "~16.0.15"
   },
@@ -255,7 +293,6 @@
   "private": false,
   "author": "",
   "homepage": "https://github.com/darekf77/tnp-models#readme",
-  "main": "index.js",
   "name": "tnp-models",
   "version": "16.0.31",
   "lastBuildTagHash": "b79cb144c643a0dc05a0b6eed376519ef68d9c44"
