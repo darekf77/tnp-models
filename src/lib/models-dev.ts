@@ -69,16 +69,12 @@ export namespace ModelsDev {
   export interface TscCompileOptions {
     cwd: string;
     watch?: boolean;
-    outDir?: string;
-    websql?: boolean;
+    outDir?: BuildDir;
     generateDeclarations?: boolean;
     tsExe?: string;
     diagnostics?: boolean;
     hideErrors?: boolean;
     debug?: boolean;
-    locationOfMainProject: string;
-    isBrowserBuild?: boolean;
-    buildType: 'dist' | 'bundle';
   }
 
 
