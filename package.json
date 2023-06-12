@@ -260,7 +260,7 @@
     "socket.io": "2.4.1",
     "sort-package-json": "1.11.0",
     "sql.js": "1.8.0",
-    "static-columns": "~16.0.4",
+    "static-columns": "~16.0.5",
     "string-similarity": "4.0.2",
     "sudo-block": "3.0.0",
     "sweetalert2": "11.7.12",
@@ -299,6 +299,6 @@
   "author": "",
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "name": "tnp-models",
-  "version": "16.0.32",
+  "version": "16.0.33",
   "lastBuildTagHash": "66401e0b12f24b50ddb9d39b105f20c22c1b0837"
 }
