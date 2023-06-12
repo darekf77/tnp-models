@@ -39,6 +39,10 @@ export namespace ModelsEnvinronment {
   export interface EnvConfig {
 
     /**
+     * angular production mode
+     */
+    angularProd?: boolean;
+    /**
      * replace title in firedev app
      */
     title?: string;
