@@ -163,7 +163,7 @@
     "firedev-ports": "~16.0.48",
     "firedev-storage": "~16.0.40",
     "firedev-typeorm": "~16.0.37",
-    "firedev-ui": "~16.0.6",
+    "firedev-ui": "~16.0.7",
     "fkill": "6.1.0",
     "font-awesome": "4.7.0",
     "form-data": "4.0.0",
@@ -269,7 +269,7 @@
     "threads": "1.7.0",
     "tnp-cli": "~16.0.5",
     "tnp-config": "~16.0.8",
-    "tnp-core": "~16.0.9",
+    "tnp-core": "~16.0.10",
     "tnp-db": "~16.0.26",
     "tnp-helpers": "~16.0.5",
     "tnp-models": "~16.0.33",
@@ -299,6 +299,6 @@
   "author": "",
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "name": "tnp-models",
-  "version": "16.0.33",
+  "version": "16.0.34",
   "lastBuildTagHash": "05ddc2d602f0a2845f4a226b2a2bc51cce3576d8"
 }
