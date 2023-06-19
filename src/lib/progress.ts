@@ -8,8 +8,20 @@ declare const global: any;
 //#endregion
 
 
+//#region @websql
+export function helloBackend() {
+
+  console.log('asdasd')
+
+}
+//#endregion
+//#region @browser
+export function helloFrontend() {
+  console.log('asdasd')
+}
+//#endregion
 
 @CLASS.NAME('PROGRESS_DATA')
 export class PROGRESS_DATA extends BASE {
-  
+
 }
