@@ -30,7 +30,7 @@ export namespace ModelsNpm {
     | 'bundleDependencies' | 'bundledDependencies' | 'extensionDependencies'
     | '_phantomChildren';
 
-  export type TnpNpmDependencyType = 'tnp_overrided_dependencies' | 'tnp_required_workspace_child';
+  export type TnpNpmDependencyType = 'tnp_overrided_dependencies';
 
   export const ArrNpmDependencyType: NpmDependencyType[] = [
     'dependencies', 'devDependencies', 'peerDependencies', 'optionalDependencies', ,
@@ -38,7 +38,7 @@ export namespace ModelsNpm {
   ]
 
   export const ArrTnpNpmDependencyType: TnpNpmDependencyType[] = [
-    'tnp_overrided_dependencies', 'tnp_required_workspace_child'
+    'tnp_overrided_dependencies'
   ]
 
 
@@ -137,7 +137,7 @@ export namespace ModelsNpm {
      */
     useFramework: boolean;
     /**
-     * Core and contant dependecies for all projects (workspace type/standalone)
+     * Core and contant dependecies for all projects
      */
     core: {
       dependencies: {
@@ -166,11 +166,7 @@ export namespace ModelsNpm {
         onlyFor: { [libType: string]: DependenciesFromPackageJsonStyle | { [groupAlias: string]: DependenciesFromPackageJsonStyle }; }
       }
     }
-    /**
-     * Only for site projects.
-     * Relative path to baseline.
-     */
-    basedOn: string,
+
     /**
      * dependency site baselines
      */
@@ -184,28 +180,12 @@ export namespace ModelsNpm {
      * Allowed environment for poroject
      */
     allowedEnv?: ConfigModels.EnvironmentName[];
-    /**
-     * Check wheter project is generated for static build.
-     * Generated projects are inside dist folder in workspace project
-     */
-    isGenerated?: boolean;
 
     /**
      * Standalone project generated for release
      */
     isGeneratedForRelease?: boolean;
-    /**
-     * Usable only in workspace children
-     * Required workspace children for particular workspcae child
-     */
-    required?: string[],
-    /**
-     * Usable only in workspace children
-     * Required workspace servers children for particular workspcae child
-     * if server don't need lib that is required for
-     * can be put into required[];
-     */
-    requiredServers?: string[],
+
     /**
      * Override automation generation
      */
