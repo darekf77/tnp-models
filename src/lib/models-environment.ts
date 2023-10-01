@@ -96,6 +96,7 @@ export namespace ModelsEnvinronment {
     notForNpm?: boolean;
     isCoreProject?: boolean; // generated
     isStandaloneProject?: boolean; // generated
+    isSmartContainer?: boolean; // generated
     isSmartContainerTargetProject?: boolean; // generated
     name?: ConfigModels.EnvironmentName; // generated
     frameworks?: ConfigModels.UIFramework[];
