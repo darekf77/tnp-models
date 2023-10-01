@@ -296,7 +296,7 @@
     "tnp-core": "~16.0.24",
     "tnp-db": "~16.0.27",
     "tnp-helpers": "~16.0.10",
-    "tnp-models": "~16.0.37",
+    "tnp-models": "~16.0.38",
     "ts-debug": "1.3.0",
     "ts-loader": "2.3.1",
     "ts-node": "10.9.1",
@@ -325,5 +325,5 @@
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "name": "tnp-models",
   "version": "16.0.38",
-  "lastBuildTagHash": "bfb3eb0c2ed052fc2215277d483b42a83986d9b0"
+  "lastBuildTagHash": "da59b6c1d18b3507810b3e5f6f9c6a58005981fc"
 }
