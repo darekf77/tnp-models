@@ -49,6 +49,9 @@ export namespace ModelsNpm {
 
   export type Package = { name: string; version?: string; installType?: InstalationType; };
 
+  /**
+   * @deprecated
+   */
   export type DependenciesFromPackageJsonStyle = { [name: string]: string; };
 
   export type TargetProject = {
