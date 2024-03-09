@@ -7,7 +7,7 @@ export namespace ModelsDev {
     skipNodeModules?: boolean;
     recrusive?: boolean;
     branding?: boolean;
-    skipSmartContainerDistBundleInit?: boolean;
+    skipSmartContainerDistInit?: boolean;
     /**
      * init without installing node modules
      */
@@ -84,7 +84,7 @@ export namespace ModelsDev {
     outDir: string;
   }
 
-  export type BuildDir = 'dist' | 'bundle';
+  export type BuildDir = 'dist';
   export type BuildDirBrowser = 'browser' | 'websql';
 
   export type ReplacementString = '@backend' | '@backendFunc' | '@cutCodeIfTrue' | '@cutCodeIfFalse' | '@notForNpm';

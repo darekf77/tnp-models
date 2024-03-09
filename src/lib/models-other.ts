@@ -70,7 +70,7 @@ export namespace ModelsOther {
     markAsGenerated?: boolean;
     regenerateOnlyCoreProjects?: boolean;
     forceCopyPackageJSON?: boolean;
-    filterForBundle?: boolean;
+    filterForReleaseDist?: boolean;
     showInfo?: boolean;
     ommitSourceCode?: boolean;
     regenerateProjectChilds?: boolean;

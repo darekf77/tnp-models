@@ -27,14 +27,14 @@ export namespace ModelsNpm {
   }
 
   export type NpmDependencyType = 'dependencies' | 'devDependencies' | 'peerDependencies' | 'optionalDependencies'
-    | 'bundleDependencies' | 'bundledDependencies' | 'extensionDependencies'
+    | 'extensionDependencies'
     | '_phantomChildren';
 
   export type TnpNpmDependencyType = 'tnp_overrided_dependencies';
 
   export const ArrNpmDependencyType: NpmDependencyType[] = [
     'dependencies', 'devDependencies', 'peerDependencies', 'optionalDependencies', ,
-    'bundleDependencies', 'bundledDependencies', 'extensionDependencies', '_phantomChildren'
+    'extensionDependencies', '_phantomChildren'
   ]
 
   export const ArrTnpNpmDependencyType: TnpNpmDependencyType[] = [
@@ -176,7 +176,7 @@ export namespace ModelsNpm {
     dependsOn: string[],
     /**
      * Static resurces for standalone project, that are
-     * going to be included in bundle
+     * going to be included in release dist
      */
     resources?: string[];
     /**
