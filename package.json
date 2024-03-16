@@ -38,7 +38,7 @@
     "workerPlugins": {}
   },
   "dependencies": {
-    "typescript-class-helpers": "~16.5.13"
+    "typescript-class-helpers": "~16.5.14"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~16.0.5",
@@ -209,7 +209,7 @@
     "jscodeshift": "0.6.3",
     "json-stringify-safe": "5.0.1",
     "json10": "~16.5.12",
-    "json10-writer": "~16.5.12",
+    "json10-writer": "~16.5.13",
     "json5": "2.2.1",
     "json5-writer": "0.2.0",
     "jszip": "3.10.1",
@@ -233,7 +233,7 @@
     "ng-lock": "16.0.1",
     "ng-packagr": "16.0.1",
     "ng-talkback": "~16.5.13",
-    "ng2-logger": "~16.5.14",
+    "ng2-logger": "~16.5.15",
     "ng2-rest": "~16.5.12",
     "ngx-ace-wrapper": "14.0.0",
     "ngx-editor": "15.3.0",
@@ -294,8 +294,8 @@
     "task.js": "0.1.5",
     "threads": "1.7.0",
     "tnp-cli": "~16.5.12",
-    "tnp-config": "~16.5.13",
-    "tnp-core": "~16.5.19",
+    "tnp-config": "~16.5.14",
+    "tnp-core": "~16.5.22",
     "tnp-db": "~16.5.12",
     "tnp-helpers": "~16.5.14",
     "tnp-models": "~16.5.12",
@@ -326,6 +326,6 @@
   "author": "",
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "name": "tnp-models",
-  "version": "16.5.12",
+  "version": "16.5.13",
   "lastBuildTagHash": "b327c6282d076286682d0e07144eabe76692dddb"
 }
