@@ -21,7 +21,8 @@
       "includeNodeModules": false,
       "cliBuildNoDts": false,
       "cliBuildObscure": false,
-      "cliBuildIncludeNodeModules": false
+      "cliBuildIncludeNodeModules": false,
+      "cliBuildUglify": false
     },
     "smartContainerTarget": "",
     "type": "isomorphic-lib",
@@ -330,5 +331,6 @@
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "name": "tnp-models",
   "version": "16.5.22",
-  "lastBuildTagHash": "5791490e977e1254edaaaedcbed543a513e45d99"
+  "lastBuildTagHash": "5791490e977e1254edaaaedcbed543a513e45d99",
+  "main": "index.js"
 }
