@@ -323,9 +323,6 @@
     "yup": "1.1.1",
     "zone.js": "~0.13.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "description": "",
   "license": "MIT",
   "private": false,
