@@ -38,7 +38,7 @@
     "workerPlugins": {}
   },
   "dependencies": {
-    "typescript-class-helpers": "~16.100.10"
+    "typescript-class-helpers": "~16.444.1"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "~16.0.2-beta.2",
@@ -245,7 +245,7 @@
     "ng-lock": "16.0.1",
     "ng-packagr": "16.0.1",
     "ng-talkback": "16.100.5",
-    "ng2-logger": "16.100.10",
+    "ng2-logger": "16.444.1",
     "ng2-pdfjs-viewer": "16.0.4",
     "ng2-rest": "16.100.7",
     "ngx-ace-wrapper": "14.0.0",
@@ -309,11 +309,11 @@
     "task.js": "0.1.5",
     "threads": "1.7.0",
     "tnp-cli": "16.100.5",
-    "tnp-config": "16.100.10",
-    "tnp-core": "16.100.23",
+    "tnp-config": "16.444.1",
+    "tnp-core": "16.444.1",
     "tnp-db": "16.100.9",
     "tnp-helpers": "16.100.32",
-    "tnp-models": "16.100.10",
+    "tnp-models": "16.444.1",
     "ts-debug": "1.3.0",
     "ts-json-schema-generator": "2.1.1",
     "ts-loader": "2.3.1",
@@ -343,7 +343,7 @@
   "author": "",
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "name": "tnp-models",
-  "version": "16.444.0",
-  "lastBuildTagHash": "3a373f1005bc00ffa79dc97ef97b97600dd78fea",
+  "version": "16.444.1",
+  "lastBuildTagHash": "b5ea4da60b2c53bed1f45a1ee2371cc0d8dcbfde",
   "main": "index.js"
 }
