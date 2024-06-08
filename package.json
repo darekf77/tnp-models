@@ -343,7 +343,7 @@
   "author": "",
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "name": "tnp-models",
-  "version": "16.444.2",
+  "version": "16.444.3",
   "lastBuildTagHash": "a23a14053b1e102609521dd9ae5786b40f93e05e",
   "main": "index.js"
 }
