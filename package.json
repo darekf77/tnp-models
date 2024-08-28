@@ -38,7 +38,7 @@
     "workerPlugins": {}
   },
   "dependencies": {
-    "typescript-class-helpers": "~18.0.7"
+    "typescript-class-helpers": "~18.0.10"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "~18.0.0",
@@ -239,9 +239,10 @@
     "ng-lock": "18.0.1",
     "ng-packagr": "18.1.0",
     "ng-talkback": "~18.0.5",
-    "ng2-logger": "~18.0.8",
+    "ng2-logger": "~18.0.11",
     "ng2-pdfjs-viewer": "18.0.0",
     "ng2-rest": "~18.0.6",
+    "ng2-rest-swagger-generator": "18.0.5",
     "ngx-ace-wrapper": "17.0.0",
     "ngx-editor": "17.5.4",
     "ngx-highlightjs": "12.0.0",
@@ -309,10 +310,10 @@
     "task.js": "0.1.5",
     "threads": "1.7.0",
     "tnp": "~18.0.6",
-    "tnp-config": "~18.0.8",
+    "tnp-config": "~18.0.11",
     "tnp-core": "~18.0.30",
     "tnp-helpers": "~18.0.6",
-    "tnp-models": "~18.0.7",
+    "tnp-models": "~18.0.10",
     "ts-debug": "1.3.0",
     "ts-json-schema-generator": "2.3.0-next.5",
     "ts-loader": "2.3.1",
@@ -345,7 +346,7 @@
   "author": "",
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "name": "tnp-models",
-  "version": "18.0.9",
-  "lastBuildTagHash": "bc29c01daced07657410b581c6d568534e806fbe",
+  "version": "18.0.10",
+  "lastBuildTagHash": "80626a2f0fca11e9aeef2f9e76b144ad2fa5ce69",
   "main": "dist/app.electron.js"
 }
