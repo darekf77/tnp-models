@@ -345,7 +345,7 @@
   "author": "",
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "name": "tnp-models",
-  "version": "18.0.8",
+  "version": "18.0.9",
   "lastBuildTagHash": "bc29c01daced07657410b581c6d568534e806fbe",
   "main": "dist/app.electron.js"
 }
