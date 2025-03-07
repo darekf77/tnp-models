@@ -35,7 +35,8 @@
     "author": "",
     "homepage": "https://github.com/darekf77/tnp-models#readme",
     "main": "index.js",
-    "workerPlugins": {}
+    "workerPlugins": {},
+    "packageJsonOverride": {}
   },
   "dependencies": {
     "typescript-class-helpers": "~18.0.21"

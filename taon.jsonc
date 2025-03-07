@@ -34,5 +34,6 @@
   "author": "",
   "homepage": "https://github.com/darekf77/tnp-models#readme",
   "main": "index.js",
-  "workerPlugins": {}
+  "workerPlugins": {},
+  "packageJsonOverride": {}
 }
