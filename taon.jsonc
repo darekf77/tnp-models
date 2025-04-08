@@ -1,38 +1,20 @@
 {
-  "resources": [],
-
-  "overrided": {
-    "ignoreDepsPattern": [],
-    "includeAsDev": [],
-    "includeOnly": ["typescript-class-helpers"],
-    "dependencies": {},
-    "linkedFolders": [],
-    "npmFixes": []
-  },
-
-  "smartContainerBuildTarget": "",
-  "linkedRepos": [],
-
-  "libReleaseOptions": {
-    "nodts": false,
-    "obscure": false,
-    "ugly": false,
-    "includeNodeModules": false,
-    "cliBuildNoDts": false,
-    "cliBuildObscure": false,
-    "cliBuildIncludeNodeModules": false,
-    "cliBuildUglify": false
-  },
-
-  "smartContainerTarget": "",
   "type": "isomorphic-lib",
   "version": "v18",
+  "dependenciesNamesForNpmLib": ["typescript-class-helpers"],
   "additionalNpmNames": ["taon-models"],
-  "description": "",
-  "license": "MIT",
-  "private": false,
-  "author": "",
-  "homepage": "https://github.com/darekf77/tnp-models#readme",
-  "main": "index.js",
-  "workerPlugins": {}
+
+  "autoReleaseConfigAllowedItems": [{
+    "artifactName": "npm-lib-and-cli-tool"
+  }],
+
+  "resources": [],
+
+  "packageJsonOverride": {
+    "author": "",
+    "description": "",
+    "homepage": "https://github.com/darekf77/tnp-models#readme",
+    "license": "MIT",
+    "private": false
+  }
 }
