@@ -4,10 +4,16 @@
     "strictNullChecks": false,
     "rootDir": "./src",
     "paths": {
-      "tnp-models": [
+      "@lib": [
         "./src/lib"
       ],
-      "tnp-models/*": [
+      "@lib/*": [
+        "./src/lib/*"
+      ],
+      "tnp-models/src": [
+        "./src/lib"
+      ],
+      "tnp-models/src/*": [
         "./src/lib/*"
       ]
     }
