@@ -1,34 +1,51 @@
-//#region @notForNpm
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+
+//#region  tnp-models component
 //#region @browser
-import { NgModule } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
+@Component({ template: 'hello world fromr tnp-models' })
+export class TnpModelsComponent {}
+//#endregion
+//#endregion
 
-@Component({
-selector: 'app-tnp-models',
-template: 'hello from tnp-models'
-})
-export class TnpModelsComponent implements OnInit {
-constructor() { }
-
-ngOnInit() { }
-}
-
+//#region  tnp-models module
+//#region @browser
 @NgModule({
-imports: [],
-exports: [TnpModelsComponent],
-declarations: [TnpModelsComponent],
-providers: [],
+  declarations: [TnpModelsComponent],
+  imports: [CommonModule],
+  exports: [TnpModelsComponent],
 })
-export class TnpModelsModule { }
+export class TnpModelsModule {}
 //#endregion
-
-//#region @backend
-async function start(port: number)  {
-
-}
-
-export default start;
-
-//#endregion
-
 //#endregion
