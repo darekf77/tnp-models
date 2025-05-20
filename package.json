@@ -1,6 +1,6 @@
 {
   "name": "tnp-models",
-  "version": "19.0.14",
+  "version": "19.0.15",
   "license": "MIT",
   "author": "",
   "private": false,
@@ -328,5 +328,6 @@
     "zone.js": "~0.13.0"
   },
   "description": "",
+  "main": "dist/app.electron.js",
   "bin": {}
 }
