@@ -1,6 +1,6 @@
 {
   "name": "tnp-models",
-  "version": "19.0.21",
+  "version": "19.0.22",
   "scripts": {
     "taon init": "taon init",
     "taon start": "taon start",
@@ -349,10 +349,5 @@
   },
   "description": "",
   "main": "dist/app.electron.js",
-  "bin": {},
-  "exports": {
-    ".": {
-      "style": "./scss/index.scss"
-    }
-  }
+  "bin": {}
 }
