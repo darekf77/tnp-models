@@ -3,6 +3,7 @@
   "version": "v19",
   "dependenciesNamesForNpmLib": ["typescript-class-helpers"],
   "additionalNpmNames": ["taon-models"],
+  "appId": "com.domain.example.tnp-models",
 
   "autoReleaseConfigAllowedItems": [{
     "artifactName": "npm-lib-and-cli-tool"
@@ -11,8 +12,8 @@
   "resources": [],
 
   "packageJsonOverride": {
-    "author": "",
-    "description": "",
+    "author": "Dfilipiak",
+    "description": "Description for tnp-models. Hello world!",
     "homepage": "https://github.com/darekf77/tnp-models#readme",
     "license": "MIT",
     "private": false,
